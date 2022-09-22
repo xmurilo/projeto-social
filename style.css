@@ -10,6 +10,12 @@ html, body {
   background-color: #000;
 }
 
+body {
+  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-attachment: fixed;
+  
+}
+
 main {
   position: relative;
   height: 100vh;
@@ -35,4 +41,13 @@ iframe#tela {
 
   top: 80px;
   left: 22px;
+}
+
+section#redes-sociais {
+  text-align: right;
+}
+
+section#redes-sociais img {
+  border-radius: 50%;
+  width: 50px;
 }
