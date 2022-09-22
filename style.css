@@ -28,8 +28,8 @@ section#telefone {
   position: absolute;
   top:50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
+  animation: telefone .7s .2s backwards;
 
   background: url(pacote-d013/pacote-d013/imagens/frame-iphone.png) no-repeat;
 }
@@ -45,9 +45,31 @@ iframe#tela {
 
 section#redes-sociais {
   text-align: right;
+  animation: fromtop .7s .2s backwards ;
 }
 
 section#redes-sociais img {
   border-radius: 50%;
   width: 50px;
+  margin: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.41);
+  transition: transform .2s;
 }
+
+section#redes-sociais img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+}
+
+@keyframes fromtop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
