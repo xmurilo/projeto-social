@@ -22,30 +22,30 @@ main {
 }
 
 section#telefone {
+  background: url(pacote-d013/pacote-d013/imagens/frame-iphone.png) no-repeat;
+
   height: 627px;
   width: 321px;
-  background-color: #fff;
+
   position: absolute;
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: telefone .7s .2s backwards;
 
-  background: url(pacote-d013/pacote-d013/imagens/frame-iphone.png) no-repeat;
+  animation: telefone .7s .2s backwards;
 }
 
 iframe#tela {
   position: relative;
   width: 267px;
   height: 471px;
-
   top: 80px;
   left: 22px;
 }
 
 section#redes-sociais {
   text-align: right;
-  animation: fromtop .7s .2s backwards ;
+  animation: fromtop .7s .2s backwards ;  
 }
 
 section#redes-sociais img {
@@ -63,7 +63,7 @@ section#redes-sociais img:hover {
 
 @keyframes fromtop {
   from {
-    transform: translateY(-50px);
+    transform: translateY(-150px);
     opacity: 0;
   }
 
@@ -72,4 +72,3 @@ section#redes-sociais img:hover {
     opacity: 1;
   }
 }
-
